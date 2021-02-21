@@ -6,11 +6,11 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/artman41/guitarsniffer/guitarjoypad"
-	"github.com/artman41/guitarsniffer/guitarpacket"
-	"github.com/artman41/guitarsniffer/guitarsniffer"
 	"github.com/go-gl/gl/v2.1/gl"
-	"github.com/go-gl/glfw/v3.1/glfw"
+	"github.com/go-gl/glfw/v3.3/glfw"
+	"github.com/wclaibor/rockBandSniffer/guitarjoypad"
+	"github.com/wclaibor/rockBandSniffer/guitarpacket"
+	"github.com/wclaibor/rockBandSniffer/guitarsniffer"
 )
 
 var currentPacket = guitarpacket.GuitarPacket{}
@@ -46,7 +46,7 @@ func guiThread(runDataThread *bool) {
 	}
 	defer glfw.Terminate()
 
-	width, height := 230, 100
+	width, height := 230, 200
 
 	glfw.WindowHint(glfw.Resizable, glfw.False)
 	window, err := glfw.CreateWindow(width, height, "Guitar Sniffer", nil, nil)

@@ -4,12 +4,12 @@ import (
 	"image"
 	"image/color"
 
-	"github.com/artman41/guitarsniffer/guitarpacket"
 	"github.com/go-gl/gl/v2.1/gl"
 	"github.com/golang/freetype/truetype"
 	"github.com/llgcode/draw2d"
 	"github.com/llgcode/draw2d/draw2dgl"
 	"github.com/llgcode/draw2d/draw2dkit"
+	"github.com/wclaibor/rockBandSniffer/guitarpacket"
 	"golang.org/x/image/font/gofont/gobold"
 	"golang.org/x/image/font/gofont/goitalic"
 	"golang.org/x/image/font/gofont/gomono"

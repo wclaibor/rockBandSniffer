@@ -1,8 +1,8 @@
 package guitarjoypad
 
 import (
-	"github.com/artman41/guitarsniffer/guitarpacket"
 	"github.com/artman41/vjoy"
+	"github.com/wclaibor/rockBandSniffer/guitarpacket"
 )
 
 const (
